@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+header {
+    margin-bottom: -60px;
+}
+
+.logo_alura {
+    margin-top: 1%;
+    margin-left: 1%;
+    
+}
+
+main {
+    display: flex;
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+
+.digitacao {
+    border: none;
+    color: #0A3871;
+    margin-top: 10%;
+    text-transform: lowercase;
+    width: 800px;
+    height: 500px;
+    resize: none;
+}
+
+::placeholder {color: #0A3871; }
+.digitacao:focus {
+    outline: none;   
+}
+
+.informacao {
+    color: #495057;
+    font-size: 15px;
+    margin-top: 11%;
+    margin-bottom: 0px;
+}   
+
+img, h6 {
+    display: inline-block; 
+}
+
+.botoes {
+    display: flex;
+}
+
+.botao_criptografar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.botao_descriptografar {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 12px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 5%;
+    width: 328px;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    border: 1px solid #cccccc;
+    color: white;
+}
+
+
+.botao_limpar {
+    background-color: #427ac2;
+    border: 1px solid #0A3871;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 5%;
+    width: 328px;
+}
+
+.botao_copiar {
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    color:#0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 222px;
+    margin-top: 765px;
+    position: absolute;
+    width: 328px;
+}
+
+.resultado {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url(./Imagens/boneco.png);
+    background-position: 55% 9%;
+    border: none;
+    border-radius: 12px;
+    color:#0A3871;
+    margin-left: 200px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    padding-bottom: 0px;
+    box-shadow: 0px 24px 32px -8px #d8d9db;
+    padding-top: 420px;
+    text-align:center;
+    width: 350px;
+    height: 410px;
+    resize: none;
+
+}
+
+.resultado.sem-imagem {
+    background-image: none;
+    padding: 10px;
+    padding-bottom: 410px;
+    text-transform: lowercase;    
+
+}
+
+.resultado::placeholder {
+    color:#0A3871;
+    position: relative;
+    padding-top: 200px;
+}
+.resultado:focus {
+    outline: none;
+}
+
+.texto_adicional {
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 550px;
+    text-align: justify;
+    width: 280px;
+    line-height: 180%;
+}
+
+.texto_adicional.oculto {
+    display:none;
+}
+
+.alert-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #0A3871;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 25px;
+}

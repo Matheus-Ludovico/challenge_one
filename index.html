@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto ONE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo_alura" src="./Imagens/logo_alura.png" alt="Logotipo da Alura">
+    </header>
+    <main>
+        <section class="apresentacao__tela__principal">
+            <textarea id="input-text" class="digitacao" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            <div class="apresenta_informacao">
+                <img class="exclamacao" src="./Imagens/exclamacao.png" alt="Símbolo de Exclamação">
+                <h6 class="informacao">Apenas letras minúsculas e sem acento</h6>
+            </div>
+            <div class="botoes">
+                <button id="btn-criptografar" class="botao_criptografar">Criptografar</button>
+                <button id="btn-descriptografar" class="botao_descriptografar">Descriptografar</button> 
+                <button id="btn-limpar" class="botao_limpar">Limpar</button>
+            </div>
+        </section>
+        <section>
+            <textarea id="output-text" class="resultado" cols="15" rows="10" placeholder="Nenhuma mensagem encontrada" readonly></textarea>
+            <div id="additional-text" class="texto_adicional">Digite o texto que deseja criptografar ou descriptografar</div>
+            <button class="botao_copiar">Copiar</button>
+        </section>
+    </main>
+    <div id="alert-message" class="alert-message" style="display: none;">Texto copiado para a área de transferência!</div>
+    <footer></footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
